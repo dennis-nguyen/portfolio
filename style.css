@@ -14,11 +14,6 @@
     font-size: 16px
 }
 
-
-/* .contactLogos {
-    padding-top: 10px
-} */
-
 .contactTitle {
     padding-bottom: 20px
 }
@@ -27,81 +22,10 @@ section {
     margin-top: 25px;
 }
 
-
-/* a, a:hover, a:active, a:visited, a:focus {
-    text-decoration:none !important;
-} */
-
 #map {
     height: 300px;
     width: 100%;
     border: black solid 1px;
-}
-
-#javascript {
-    background-image: url('assets/images/skills/Javascript.png');
-    width: 200px;
-    height: 200px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-#nodejs {
-    background-image: url('assets/images/skills/Nodejs.png');
-    width: 200px;
-    height: 226px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-#react {
-    background-image: url('assets/images/skills/React.png');
-    width: 200px;
-    height: 180px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-#handlebars {
-    background-image: url('assets/images/skills/Handlebars.png');
-    width: 200px;
-    height: 48px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-#bootstrap {
-    background-image: url('assets/images/skills/Bootstrap.png');
-    width: 200px;
-    height: 200px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-#mongodb {
-    background-image: url('assets/images/skills/Mongodb.png');
-    width: 200px;
-    height: 57px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-#mysql {
-    background-image: url('assets/images/skills/Mysql.png');
-    width: 200px;
-    height: 103px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-#firebase {
-    background-image: url('assets/images/skills/Firebase.png');
-    width: 200px;
-    height: 225px;
-    margin-right: auto;
-    margin-left: auto;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 .grid-item {
@@ -116,6 +40,10 @@ body {
     position: relative;
 }
 
+#skills {
+    padding-bottom: 40px;
+}
+
 .handlebarsDIV {
     height: 200px;
 }
@@ -126,7 +54,55 @@ body {
     margin-left: auto;
 }
 
-
 .logoRow2 {
     padding-top: 30px;
+}
+
+.logoRow3 {
+    padding-top: 30px;
+}
+
+.logoRow4 {
+    padding-top: 30px;
+}
+
+.descriptionDiv {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.scrollReveal:hover .descriptionDiv {
+    visibility: visible;
+    opacity: 1;
+}
+
+.description {
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+.scrollReveal:hover .description {
+    transform: translateY(0);
+}
+
+a,
+a:visited {
+    color: white;
+}
+
+.contactLink,
+.contactLink:visited {
+    color: black;
 }
