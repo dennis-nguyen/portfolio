@@ -1,10 +1,5 @@
 $(document).ready(function () {
-    // $('.intro').typeIt({
-    //  strings: ["I am a programmer."],
-    //  speed: 70,
-    //  autoStart: false,
-    //  loop: true
-    // });
+   $('[data-toggle="tooltip"]').tooltip();
 
     $('.intro').typeIt({
         strings: ["I am a web developer.", "I am a KBBQ enthusiast."],
@@ -15,26 +10,7 @@ $(document).ready(function () {
         lifeLike: true
     });
 
-    let initMap = () => {
-        var fv = {
-            lat: 33.7101469,
-            lng: -117.9653408
-        };
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 12,
-            center: fv,
-            disableDefaultUI: true
-            // scrollwheel: false,
-            // draggable: false
 
-        });
-        var marker = new google.maps.Marker({
-            position: fv,
-            map: map
-        });
-    }
-
-    initMap();
 
 
     $('.grid').masonry({
@@ -89,8 +65,24 @@ $(document).ready(function () {
 
     });
 
-
-
-
-
 });
+
+var map;
+function initMap(){
+    var fv = {
+        lat: 33.7101469,
+        lng: -117.9653408
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: fv,
+        disableDefaultUI: true
+        // scrollwheel: false,
+        // draggable: false
+
+    });
+    var marker = new google.maps.Marker({
+        position: fv,
+        map: map
+    });
+}

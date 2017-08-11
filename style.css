@@ -32,8 +32,8 @@ section {
     width: 200px;
 }
 
-i {
-    font-size: 200px
+.fa {
+    font-size: 35px
 }
 
 body {
@@ -105,4 +105,16 @@ a:visited {
 .contactLink,
 .contactLink:visited {
     color: black;
+}
+
+.portfolioItem {
+    border: black 1px solid;
+}
+
+.portfolioRow2 {
+    padding-top: 10px;
+}
+
+.comingSoon {
+    border: black 1px solid;
 }
