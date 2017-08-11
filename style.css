@@ -45,6 +45,7 @@ section {
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
+
 #nodejs {
     background-image: url('assets/images/skills/Nodejs.png');
     width: 200px;
@@ -52,6 +53,7 @@ section {
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
+
 #react {
     background-image: url('assets/images/skills/React.png');
     width: 200px;
@@ -59,6 +61,7 @@ section {
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
+
 #handlebars {
     background-image: url('assets/images/skills/Handlebars.png');
     width: 200px;
@@ -66,6 +69,7 @@ section {
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
+
 #bootstrap {
     background-image: url('assets/images/skills/Bootstrap.png');
     width: 200px;
@@ -94,16 +98,35 @@ section {
     background-image: url('assets/images/skills/Firebase.png');
     width: 200px;
     height: 225px;
+    margin-right: auto;
+    margin-left: auto;
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
 
-.grid-item { width: 200px; }
+.grid-item {
+    width: 200px;
+}
 
 i {
     font-size: 200px
 }
 
- body {
-      position: relative; 
-  }
+body {
+    position: relative;
+}
+
+.handlebarsDIV {
+    height: 200px;
+}
+
+#handlebars {
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.logoRow2 {
+    padding-top: 30px;
+}
