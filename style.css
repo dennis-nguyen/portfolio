@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Poppins|Work+Sans');
+
 .jumbotron {
     background-color: transparent !important;
 }
@@ -39,14 +41,15 @@ section {
 
 body {
     position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
 }
 
 #skills {
     padding-bottom: 40px;
-}
-
-.handlebarsDIV {
-    height: 200px;
 }
 
 #handlebars {
@@ -120,8 +123,9 @@ a:visited {
     border: black 1px solid;
 }
 
-.portfolioRow2 {
-    padding-top: 10px;
+.portfolioLink {
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
  .contactSection {
@@ -138,10 +142,10 @@ a:visited {
     padding-top: 80px;
     padding-bottom: 20px;
 }
-/* footer {
-    padding-top: 100px;
-} */
-
+.footerLink{
+    padding:10px;
+    display: inline-block;
+}
 .fa-ellipsis-v {
     font-size: 10px;
 }
@@ -160,4 +164,8 @@ a:visited {
 }
 .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.descriptionDiv a {
+    padding: 10px;
 }
