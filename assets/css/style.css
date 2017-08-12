@@ -12,7 +12,12 @@
 }
 
 .introParagraph {
+    margin-top: 0px;
     font-size: 18px
+}
+
+.aboutTitle {
+    padding-bottom: 20px;
 }
 
 section {
