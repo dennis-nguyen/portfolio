@@ -94,6 +94,7 @@ h1 {
 /* mouse over show div end */
 
 a,
+a:link,
 a:visited {
     color: black;
 }

@@ -39,23 +39,43 @@ $(document).ready(function () {
     });
 
     // Hides hamburger menu on button click
-    $(document).on('click', '.navbar-collapse.in', function (e) {
-        if ($(e.target).is('a')) {
-            $(this).collapse('hide');
-        }
-    });
+    // $(document).on('click', '.navbar-collapse.in', function (e) {
+    //     if ($(e.target).is('a')) {
+    //         $(this).collapse('hide');
+    //     }
+    // });
 
-    // Closes hamburger menu on clicking outside of menu
-    $(document).click(function (event) {
-        var clickover = $(event.target);
-        var $navbar = $(".navbar-collapse");
-        var _opened = $navbar.hasClass("in");
-        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-            $navbar.collapse('hide');
-        }
-    });
+    // // Closes hamburger menu on clicking outside of menu
+    // $(document).click(function (event) {
+    //     var clickover = $(event.target);
+    //     var $navbar = $(".navbar-collapse");
+    //     var _opened = $navbar.hasClass("in");
+    //     if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+    //         $navbar.collapse('hide');
+    //     }
+    // });
 
-    // appends email and phone number to prevent bot sniffing
+    
+    // Allowing user to close the hamburger button by clicking anywhere on screen
+    function allowCollapseHamburger() {
+        $(document).click(function (event) {
+            const clicktarget = $(event.target);
+            const hamburger = $(".navbar-toggle");
+            const closed = hamburger.hasClass("collapsed");
+            if (!closed && !clicktarget.hasClass("navbar-toggle")) {
+                hamburger.click();
+            }
+        });
+    }
+
+
+
+    allowCollapseHamburger();
+    appendPhone();
+    appendEmail();
+});
+
+  // appends email and phone number to prevent bot sniffing
     function appendEmail() {
         var e = "ngu";
         e += "yen";
@@ -82,9 +102,8 @@ $(document).ready(function () {
         $('#ephon').text(p)
         $("#phona").attr('href', `${t+=p}`);
     }
-    appendPhone();
-    appendEmail();
-});
+
+
 
 //Google maps
 var map;
