@@ -15,11 +15,6 @@
     font-size: 18px
 }
 
-.contactTitle {
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
 section {
     margin-top: 25px;
 }
@@ -61,7 +56,9 @@ h1 {
     padding-top: 30px;
 }
 
+
 /* mouse over show div start */
+
 .descriptionDiv {
     position: absolute;
     top: 0;
@@ -93,6 +90,7 @@ h1 {
     transform: translateY(0);
 }
 
+
 /* mouse over show div end */
 
 a,
@@ -112,13 +110,17 @@ a:visited {
     padding-left: 25px;
     padding-right: 25px;
 }
+.contactTitle {
+    padding-bottom: 20px;
+}
 
 .contactSection {
+    padding-top: 30px;
     padding-bottom: 40px;
 }
 
 #portfolio {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 40px;
 }
 
@@ -156,9 +158,13 @@ a:visited {
 .hvr-glow:active {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
+
+
 /* Glow End */
 
+
 /* github and live link padding */
+
 .descriptionDiv a {
     padding: 10px;
 }

@@ -76,14 +76,52 @@ $(document).ready(function () {
 
 
 
+function appendEmail(){
+    var e = "ngu";
+    e += "yen";
+    e += ".den";
+    e += "n@";
+    e += "gma";
+    e += "il.";
+    e += "com";
+    var m = 'mai';
+    m += 'lto:';
+    $("#maile").text(e);
+    $("#maila").attr('href', `${m+=e}`)
+}
+// Appending Sensitive Information to prevent bot sniffing
+function appendPhone(){
+    var p = '71';
+    p += '4-';
+    p += '46';
+    p += '7-';
+    p += '53';
+    p += '42';
+    var t = 'te';
+    t += 'l:';
+    $('#ephon').text(p)
+    $("#phona").attr('href', `${t+=p}`);
+}
 
+appendPhone();
+appendEmail();
 
+// Hides hamburger menu on click
     $(document).on('click', '.navbar-collapse.in', function (e) {
         if ($(e.target).is('a')) {
             $(this).collapse('hide');
         }
     });
 
+
+  $(document).click(function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+        $navbar.collapse('hide');
+    }
+});
 
 
 
