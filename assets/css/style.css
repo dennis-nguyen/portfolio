@@ -30,6 +30,10 @@ section {
     color: black;
 }
 
+.fa-external-link{
+   font-size: 32px;
+}
+
 body {
     position: relative;
     font-family: 'Josefin Sans', sans-serif;
