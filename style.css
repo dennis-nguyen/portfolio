@@ -169,3 +169,11 @@ a:visited {
 .descriptionDiv a {
     padding: 10px;
 }
+
+.appItem {
+    margin-top: 20px;
+}
+
+#home{
+    padding-top: 40px;
+}
