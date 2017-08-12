@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Poppins|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
 .jumbotron {
     background-color: transparent !important;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 h1 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 #skills {
