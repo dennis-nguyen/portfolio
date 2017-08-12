@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Poppins|Work+Sans');
-
 .jumbotron {
     background-color: transparent !important;
 }
@@ -13,11 +12,12 @@
 }
 
 .introParagraph {
-    font-size: 16px
+    font-size: 18px
 }
 
 .contactTitle {
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 section {
@@ -28,10 +28,6 @@ section {
     height: 300px;
     width: 100%;
     border: black solid 1px;
-}
-
-.grid-item {
-    width: 200px;
 }
 
 .fa {
@@ -49,13 +45,8 @@ h1 {
 }
 
 #skills {
+    padding-top: 10px;
     padding-bottom: 40px;
-}
-
-#handlebars {
-    margin-top: 80px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .logoRow2 {
@@ -70,13 +61,14 @@ h1 {
     padding-top: 30px;
 }
 
+/* mouse over show div start */
 .descriptionDiv {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-     background: rgba(255, 255, 255, 0.6); 
+    background: rgba(255, 255, 255, 0.6);
     color: #fff;
     visibility: hidden;
     opacity: 0;
@@ -86,7 +78,6 @@ h1 {
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
 }
-
 
 .scrollReveal:hover .descriptionDiv {
     visibility: visible;
@@ -102,21 +93,15 @@ h1 {
     transform: translateY(0);
 }
 
- a,
+/* mouse over show div end */
+
+a,
 a:visited {
     color: black;
-} 
-
- .logoLink {
-    font-size: 30px;
-} 
-
-.whiteLink{
-    color: white !important;
 }
-.contactLink,
-.contactLink:visited {
-    color: black;
+
+.logoLink {
+    font-size: 30px;
 }
 
 .portfolioItem {
@@ -128,44 +113,52 @@ a:visited {
     padding-right: 25px;
 }
 
- .contactSection {
-    padding-bottom: 20px;
-} 
+.contactSection {
+    padding-bottom: 40px;
+}
 
 #portfolio {
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
+
 .bottomLink {
     padding-bottom: 60px;
 }
-.fa-linkedin-square{
+
+.fa-linkedin-square {
     padding-top: 80px;
     padding-bottom: 20px;
 }
-.footerLink{
-    padding:10px;
+
+.footerLink {
+    padding: 10px;
     display: inline-block;
 }
-.fa-ellipsis-v {
-    font-size: 10px;
-}
 
-/* Glow */
+
+/* Glow Start */
+
 .hvr-glow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
-}
-.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
 }
 
+.hvr-glow:hover,
+.hvr-glow:focus,
+.hvr-glow:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+/* Glow End */
+
+/* github and live link padding */
 .descriptionDiv a {
     padding: 10px;
 }
@@ -174,6 +167,6 @@ a:visited {
     margin-top: 20px;
 }
 
-#home{
+#home {
     padding-top: 40px;
 }

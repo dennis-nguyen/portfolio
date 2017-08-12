@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip();
 
     $('.intro').typeIt({
         strings: ["I am a web developer.", "I am a KBBQ enthusiast."],
@@ -11,27 +11,10 @@ $(document).ready(function () {
     });
 
 
-
-
-    $('.grid').masonry({
-        // options
-        itemSelector: '.grid-item',
-        columnWidth: 200,
-        isAnimated: true,
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
-
-
     window.sr = ScrollReveal();
     sr.reveal('.scrollReveal', {
         duration: 1500
     });
-
-    // $('body').scrollspy({target: ".navbar"})
 
     // Add scrollspy to <body>
     $('body').scrollspy({
@@ -66,7 +49,7 @@ $(document).ready(function () {
     });
 
 
-        $(".footerLink a").on('click', function (event) {
+    $(".footerLink a").on('click', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -95,11 +78,11 @@ $(document).ready(function () {
 
 
 
-$(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') ) {
-        $(this).collapse('hide');
-    }
-});
+    $(document).on('click', '.navbar-collapse.in', function (e) {
+        if ($(e.target).is('a')) {
+            $(this).collapse('hide');
+        }
+    });
 
 
 
@@ -108,7 +91,8 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 });
 
 var map;
-function initMap(){
+
+function initMap() {
     var fv = {
         lat: 33.7101469,
         lng: -117.9653408
