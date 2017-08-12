@@ -1,6 +1,9 @@
 $(document).ready(function () {
+
+    // Initialize tooltips bootstrap jquery
     $('[data-toggle="tooltip"]').tooltip();
 
+    // Intro typing in jumbotron
     $('.intro').typeIt({
         strings: ["I am a web developer.", "I am a KBBQ enthusiast."],
         speed: 65,
@@ -10,124 +13,80 @@ $(document).ready(function () {
         lifeLike: true
     });
 
-
+    // Initialize scroll reveal
     window.sr = ScrollReveal();
     sr.reveal('.scrollReveal', {
         duration: 1500
     });
 
-    // Add scrollspy to <body>
+    // Adding scrollspy
     $('body').scrollspy({
         target: ".navbar",
         offset: 50
     });
 
-    // Add smooth scrolling on all links inside the navbar
-    $("#navbar a").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
+    // Add smooth scrolling nav buttons
+    $("#navbar a, .footerLink a").on('click', function (event) {
         if (this.hash !== "") {
-
-            // Prevent default anchor click behavior
             event.preventDefault();
-
-            // Store hash
             var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function () {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
             });
-
-        } // End if
-
+        }
     });
 
-
-    $(".footerLink a").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function () {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-
-        } // End if
-
-    });
-
-
-
-function appendEmail(){
-    var e = "ngu";
-    e += "yen";
-    e += ".den";
-    e += "n@";
-    e += "gma";
-    e += "il.";
-    e += "com";
-    var m = 'mai';
-    m += 'lto:';
-    $("#maile").text(e);
-    $("#maila").attr('href', `${m+=e}`)
-}
-// Appending Sensitive Information to prevent bot sniffing
-function appendPhone(){
-    var p = '71';
-    p += '4-';
-    p += '46';
-    p += '7-';
-    p += '53';
-    p += '42';
-    var t = 'te';
-    t += 'l:';
-    $('#ephon').text(p)
-    $("#phona").attr('href', `${t+=p}`);
-}
-
-appendPhone();
-appendEmail();
-
-// Hides hamburger menu on click
+    // Hides hamburger menu on button click
     $(document).on('click', '.navbar-collapse.in', function (e) {
         if ($(e.target).is('a')) {
             $(this).collapse('hide');
         }
     });
 
+    // Closes hamburger menu on clicking outside of menu
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var $navbar = $(".navbar-collapse");
+        var _opened = $navbar.hasClass("in");
+        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+            $navbar.collapse('hide');
+        }
+    });
 
-  $(document).click(function (event) {
-    var clickover = $(event.target);
-    var $navbar = $(".navbar-collapse");               
-    var _opened = $navbar.hasClass("in");
-    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
-        $navbar.collapse('hide');
+    // appends email and phone number to prevent bot sniffing
+    function appendEmail() {
+        var e = "ngu";
+        e += "yen";
+        e += ".den";
+        e += "n@";
+        e += "gma";
+        e += "il.";
+        e += "com";
+        var m = 'mai';
+        m += 'lto:';
+        $("#maile").text(e);
+        $("#maila").attr('href', `${m+=e}`)
     }
+
+    function appendPhone() {
+        var p = '71';
+        p += '4-';
+        p += '46';
+        p += '7-';
+        p += '53';
+        p += '42';
+        var t = 'te';
+        t += 'l:';
+        $('#ephon').text(p)
+        $("#phona").attr('href', `${t+=p}`);
+    }
+    appendPhone();
+    appendEmail();
 });
 
-
-
-
-});
-
+//Google maps
 var map;
 
 function initMap() {

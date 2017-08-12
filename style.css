@@ -110,6 +110,7 @@ a:visited {
     padding-left: 25px;
     padding-right: 25px;
 }
+
 .contactTitle {
     padding-bottom: 20px;
 }
@@ -122,6 +123,10 @@ a:visited {
 #portfolio {
     padding-top: 20px;
     padding-bottom: 40px;
+}
+
+#home {
+    padding-top: 40px;
 }
 
 .bottomLink {
@@ -171,8 +176,4 @@ a:visited {
 
 .appItem {
     margin-top: 20px;
-}
-
-#home {
-    padding-top: 40px;
 }
