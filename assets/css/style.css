@@ -9,6 +9,7 @@
 
 .aboutPhoto {
     height: 350px;
+    border: solid 1px black;
 }
 
 .introParagraph {
