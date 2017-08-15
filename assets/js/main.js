@@ -94,6 +94,7 @@ function initTooltip() {
 
 // Google maps
 var map;
+
 function initMap() {
     var fv = {
         lat: 33.7101469,
