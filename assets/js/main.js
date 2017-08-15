@@ -40,7 +40,7 @@ function appendPhone() {
 
 function initTypeIt() {
     $('.intro').typeIt({
-        strings: ["I am a web developer.", "I am a KBBQ admirer.", "Actually...any type of BBQ will do."],
+        strings: ["I am a web developer.", "I am a KBBQ admirer.", "Well...any type of BBQ will do."],
         speed: 65,
         breakLines: false,
         autoStart: false,
