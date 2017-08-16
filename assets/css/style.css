@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
 .jumbotron {
     background-color: transparent !important;
 }
@@ -14,7 +15,7 @@
 
 .introParagraph {
     margin-top: 0px;
-    font-size: 18px
+    font-size: 16px
 }
 
 .aboutTitle {
@@ -42,7 +43,7 @@ section {
 
 body {
     position: relative;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
